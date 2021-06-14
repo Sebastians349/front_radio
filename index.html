@@ -10,20 +10,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/main.css" />
+
     <title>Radio app</title>
   </head>
   <body>
     <header>
-      <h1 class="titulo--logo">
-        Radios de argentina
-        <a href="#">
-          <img
-            src="images/radio_spica.png"
-            class="logo--h1"
-            alt="logo con foto de vieja radio marca Spica"
-          />
-        </a>
-      </h1>
+      <div class="logo--header">
+        <h1 class="titulo--logo">
+          Radios de argentina
+          <a href="#">
+            <img
+              src="images/radio_spica.png"
+              class="logo--h1"
+              alt="logo con foto de vieja radio marca Spica"
+            />
+          </a>
+        </h1>
+      </div>
 
       <nav class="header--nav">
         <ul>
@@ -32,14 +35,65 @@
           <li><a href="#footer"></a>contacto</li>
         </ul>
       </nav>
-      <div class="switch--dark">dark</div>
+      <div class="switch--dark">dark-theme</div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="box--titulo">
+        <h2 class="titulo--main">Top Radios</h2>
+        <div class="cards-top-list">
+          <div class="card-top-radio"><img src="images/logos/xFuTgwhzTX.png" class="logo--radio" alt=""><a href=""></a></img></div>
+          <div class="card-top-radio"><img src="images/logos/xFuTgwhzTX.png" class="logo--radio" alt=""><a href=""></a></img></div>
+          <div class="card-top-radio"><img src="images/logos/xFuTgwhzTX.png" class="logo--radio" alt=""><a href=""></a></img></div>
+          <div class="card-top-radio"><img src="images/logos/xFuTgwhzTX.png" class="logo--radio" alt=""><a href=""></a></img></div>
+          
+        </div>
+        <div class="google-ads-banner">$ads</div>
+      </div>
+    </main>
 
-    <section class="listado--radios"></section>
-    <section class="box--comentarios"></section>
+    <section class="listado--radios">
+      <div class="box--titulo">
+        <h2 class="titulo--listado">Emisoras</h2>
+      </div>
+      <div class="group-radio-list"> listado radios
+        <div class="card-radio-sm">
+          <img src="images/logos/WmnW6kEgFQ.png" alt="">
+            <span class="line">
+              <h6></h6>
+            </span>
+          </img>
+        </div>
+      <!-- Repetir hasta morir :D -->
+      </div> <!-- cierra el grupo -->
+    </section>
+    <section class="box--comentarios">
+      <div class="box--facebok"><!-- ver specs plugin  -->
+        <iframe src="" frameborder="0" class="facebook--plugin">facebook--plugin</iframe>
+      </div>
+      <div class="google-ads-banner">google-ads-banner</div>
+    </section>
+    <div class="backtotop--icon">backtotop--icon</div>
 
-    <footer></footer>
+    <footer class="footer">
+      <div class="logo-radio-sm">
+        <img src="images/radio_spica.png" alt="logo de antigua radio Spica" class="logo-radio-sm">
+        <p class="titulo--logo">radios de argentina</p>
+      </div>
+      <div class="group-disclaimer">
+        <p class="copyright">copyright<adress>CABA...</adress>
+        </p>
+        <p class="cafecito">Te gusta/sirve?<img src="images/cafecito.png" alt="logo de cafecito app"><a href="#"></a></img></p>
+        <p class="developed--by">desarrollado con &hearts;<a href="#https://sebasimarro.com">SS</a></p>
+        <div class="group--redes">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-envelope"></ion-icon>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
+
   </body>
 </html>
