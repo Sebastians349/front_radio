@@ -9,6 +9,62 @@ body {
 }
 
 header {
-  display: flex;
-  flex-flow: column;
-}
+  display: grid;
+  grid-template-columns: 100%;
+  text-align: center;
+
+  .logo--header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .titulo--logo {
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+    .logo--h1 {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      width: 6rem;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li {
+        font-size: 1.1em;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        a:hover {
+          padding: 0.6rem;
+          background-color: #0008ff;
+          color: #fafafa;
+          border-radius: 3px;
+          transition: 0.3s all ease-in-out;
+        }
+        a {
+          text-decoration: none;
+          color: unset;
+        }
+      }
+    }
+  }
+
+  .switch--dark {
+    margin-top: 0.5rem;
+  }
+} // fin header
+/* 
+@media screen only and(min-width: 800px) {
+  header {
+    grid-template-columns: 100%;
+    text-align: unset;
+  }
+} */
