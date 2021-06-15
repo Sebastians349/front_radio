@@ -16,6 +16,7 @@ header {
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   text-align: center;
+  /* SWITCH PARA EL TEMA */
 }
 
 header .logo--header {
@@ -83,6 +84,74 @@ header nav ul li a {
 
 header .switch--dark {
   margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .switch--dark em {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+header .theme-switch {
+  display: inline-block;
+  height: 2.1rem;
+  position: relative;
+  width: 3.8rem;
+}
+
+header .theme-switch input {
+  display: none;
+}
+
+header .slider {
+  background-color: #ccc;
+  cursor: pointer;
+  position: absolute;
+  inset: 0;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+header .slider:before {
+  position: absolute;
+  background-color: #fafafa;
+  left: 4px;
+  bottom: 4px;
+  content: "\263D";
+  color: #0008ff;
+  font-size: 1.3em;
+  height: 1.6rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 1.65rem;
+}
+
+header input:checked + .slider {
+  background-color: #0008ff;
+}
+
+header input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+  content: "\263C";
+  color: #c2c220;
+  font-size: 1.3em;
+}
+
+header .slider.round {
+  border-radius: 1rem;
+}
+
+header .slider.round:before {
+  border-radius: 50%;
 }
 
 /* 

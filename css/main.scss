@@ -57,8 +57,67 @@ header {
     }
   }
 
+  /* SWITCH PARA EL TEMA */
   .switch--dark {
     margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    em {
+      margin-left: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+  .theme-switch {
+    display: inline-block;
+    height: 2.1rem;
+    position: relative;
+    width: 3.8rem;
+  }
+
+  .theme-switch input {
+    display: none;
+  }
+
+  .slider {
+    background-color: #ccc;
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    transition: 0.1s;
+  }
+
+  .slider:before {
+    position: absolute;
+    background-color: #fafafa;
+    left: 4px;
+    bottom: 4px;
+    content: "\263D";
+    color: #0008ff;
+    font-size: 1.3em;
+    height: 1.6rem;
+    transition: 0.4s;
+    width: 1.65rem;
+  }
+
+  input:checked + .slider {
+    background-color: #0008ff; //definir para el theme dark
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    content: "\263C";
+    color: rgb(194, 194, 32);
+    font-size: 1.3em;
+  }
+
+  .slider.round {
+    border-radius: 1rem;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
   }
 } // fin header
 /* 
