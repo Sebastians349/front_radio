@@ -205,8 +205,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 45%);
     grid-template-rows: repeat(10, 10%);
-    gap-row: 0.1rem;
-    gap-column: 0.1rem;
+    row-gap: 0.1rem;
+    column-gap: 0.1rem;
     align-items: center;
     justify-content: center;
 
@@ -231,6 +231,8 @@ main {
   }
 } //fin listado radios
 
+// <!-- comentarios -->
+
 #box--comentarios {
   display: flex;
 
@@ -239,6 +241,18 @@ main {
     border: dashed 1px red;
   }
 } // fin comentarios
+
+// <!-- back to top -->
+#backtotop--icon {
+  background-color: rgb(190, 176, 176); //COLORFIX
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 5rem;
+  line-height: 3rem;
+  width: 3rem;
+}
 
 /* 
 @media screen only and(min-width: 800px) {

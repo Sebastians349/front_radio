@@ -257,8 +257,9 @@ main .box--titulo .cards-top-list .card-top-radio span {
       grid-template-columns: repeat(2, 45%);
   -ms-grid-rows: (10%)[10];
       grid-template-rows: repeat(10, 10%);
-  gap-row: 0.1rem;
-  gap-column: 0.1rem;
+  row-gap: 0.1rem;
+  -webkit-column-gap: 0.1rem;
+          column-gap: 0.1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -298,6 +299,17 @@ main .box--titulo .cards-top-list .card-top-radio span {
 #box--comentarios .box--facebook {
   width: 100%;
   border: dashed 1px red;
+}
+
+#backtotop--icon {
+  background-color: #beb0b0;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 5rem;
+  line-height: 3rem;
+  width: 3rem;
 }
 
 /* 
