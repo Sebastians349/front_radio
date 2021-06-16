@@ -6,6 +6,19 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans serif;
+  overflow-x: hidden; //FIX REMOVER DESPUES
+}
+/* google ads banner sizes
+  Medium Rectangle (300×250) Large Rectangle (336×280) Leaderboard (728×90) Half Page (300×600) FIX SD width: overflow-x*/
+
+.google-ads-banner {
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45.5rem;
+  height: 5.625rem;
+  box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2); //COLORFIX??
 }
 
 header {
@@ -22,14 +35,14 @@ header {
 
     .titulo--logo {
       width: 100%;
-      font-size: 2em;
+      font-size: 1.5em;
       margin-right: 4rem;
       text-transform: uppercase;
 
       .logo--h1 {
         margin-top: 1rem;
         margin-bottom: 0;
-        width: 5rem;
+        width: 4rem;
       }
     }
   }
@@ -61,7 +74,7 @@ header {
     }
   }
 
-  /* SWITCH PARA EL TEMA */
+  /* SWITCH PARA EL theme dark COLORFIX */
   .switch--dark {
     margin-top: 0.5rem;
     display: flex;
@@ -167,10 +180,66 @@ main {
         img {
           width: 8rem;
         }
+        span {
+          display: block;
+          border-top: 1px solid rgb(206, 192, 192);
+          font-size: 1em;
+          font-weight: 300;
+          padding: 1rem;
+        }
       }
     }
   }
 } // FIN MAIN
+
+// <!-- LISTADO -->
+
+#listado--radios {
+  overflow: auto;
+
+  .titulo--listado {
+    text-align: center;
+    font-weight: 400;
+  }
+  .group-radio-list {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(10, 10%);
+    gap-row: 0.1rem;
+    gap-column: 0.1rem;
+    align-items: center;
+    justify-content: center;
+
+    .card-radio-sm {
+      margin: 0.5rem;
+      max-width: 100%;
+      max-height: 100%;
+      box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+      span {
+        display: block;
+        text-align: center;
+        border-top: 0.5px solid rgb(235, 238, 236);
+        font-size: 0.7em;
+        font-weight: 300;
+        padding: 0.5rem;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+} //fin listado radios
+
+#box--comentarios {
+  display: flex;
+
+  .box--facebook {
+    width: 100%;
+    border: dashed 1px red;
+  }
+} // fin comentarios
+
 /* 
 @media screen only and(min-width: 800px) {
   header {
