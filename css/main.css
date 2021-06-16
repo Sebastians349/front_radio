@@ -302,14 +302,62 @@ main .box--titulo .cards-top-list .card-top-radio span {
 }
 
 #backtotop--icon {
+  position: relative;
+  z-index: 1;
+  -webkit-transform: translate(50px, -110px);
+          transform: translate(50px, -110px);
   background-color: #beb0b0;
   border: none;
   border-radius: 50%;
   color: white;
   cursor: pointer;
+  font-family: monospace;
   font-size: 5rem;
   line-height: 3rem;
   width: 3rem;
+}
+
+#footer {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0.5px solid #ebeeec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+#footer .logo-radio-sm {
+  text-align: center;
+}
+
+#footer .logo-radio-sm img {
+  width: 3rem;
+}
+
+#footer .logo-radio-sm .titulo--logo {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+#footer .group-disclaimer a {
+  text-decoration: none;
+  color: #347892;
+}
+
+#footer .group-disclaimer img {
+  width: 5rem;
 }
 
 /* 
