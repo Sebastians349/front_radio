@@ -158,14 +158,15 @@ main {
         border-top: 5px solid orange;
       }
       .card-top-radio {
-        width: 95%;
+        width: 80%;
         margin: 1rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2); //COLOR
-
-        // box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+        box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2); //COLORFIX??
+        img {
+          width: 8rem;
+        }
       }
     }
   }

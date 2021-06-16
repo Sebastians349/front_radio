@@ -203,13 +203,17 @@ main .box--titulo .cards-top-list #top-4 {
 }
 
 main .box--titulo .cards-top-list .card-top-radio {
-  width: 95%;
+  width: 80%;
   margin: 1rem;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+main .box--titulo .cards-top-list .card-top-radio img {
+  width: 8rem;
 }
 
 /* 
