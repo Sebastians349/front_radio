@@ -16,7 +16,7 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 45.5rem;
+  width: 15.5rem;
   height: 5.625rem;
   box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2); //COLORFIX??
 }
@@ -40,6 +40,7 @@ header {
       text-transform: uppercase;
 
       .logo--h1 {
+        display: none; //FIX ver si va o no la radio
         margin-top: 1rem;
         margin-bottom: 0;
         width: 4rem;
@@ -58,7 +59,7 @@ header {
         font-size: 1.1em;
         font-weight: 400;
         text-transform: uppercase;
-        padding: 0.5rem;
+        padding: 0.6rem;
         a:hover {
           padding: 0.6rem;
           background-color: #0008ff; //COLORFIX
@@ -291,10 +292,156 @@ main {
     }
   }
 } //fin footer
-/* 
-@media screen only and(min-width: 800px) {
-  header {
-    grid-template-columns: 100%;
-    text-align: unset;
+
+////////////////// BREAKPOINT ////////////////
+
+@media only screen and (min-width: 321px) and (max-width: 499px) {
+  main {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    .box--titulo {
+      .cards-top-list {
+        display: flex;
+        flex-direction: row;
+        .card-top-radio {
+          width: 45%;
+        }
+      }
+    }
   }
-} */
+  .google-ads-banner {
+    width: 300px;
+  }
+} // FIN (min-width: 320px) and (max-width: 499px)
+////////////////// BREAKPOINT ////////////////
+
+@media only screen and (min-width: 499px) and (max-width: 767px) {
+  main {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    .box--titulo {
+      .cards-top-list {
+        flex-direction: row;
+        .card-top-radio {
+          width: 40%;
+        }
+      }
+    }
+  }
+  .google-ads-banner {
+    width: 336px;
+  }
+} // FIN media only screen and (min-width: 499px) and (max-width: 767px)
+////////////////// BREAKPOINT ////////////////
+
+@media only screen and (min-width: 768px) {
+  header {
+    grid-template-columns: 30%, auto, 15%;
+    nav {
+      ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        li {
+          a {
+            padding: 0.6rem;
+            a:hover {
+              padding: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  main {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    .box--titulo {
+      .cards-top-list {
+        flex-direction: row;
+        .card-top-radio {
+          width: 35%;
+        }
+      }
+    }
+  }
+  .google-ads-banner {
+    width: 336px;
+  }
+} // FIN (min-width : 768px)
+////////////////// BREAKPOINT ////////////////
+
+@media only screen and (min-width: 1024px) {
+  .google-ads-banner {
+    width: 55rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    .logo--header {
+      margin-left: -0.7rem;
+    }
+    nav {
+      justify-content: center;
+      margin-left: 8rem;
+    }
+    .switch--dark {
+      margin-top: 0;
+      margin-right: 1rem;
+    }
+  }
+
+  main {
+    .box--titulo {
+      .cards-top-list {
+        flex-flow: row wrap;
+        .card-top-radio {
+          width: 22%;
+        }
+      }
+    }
+  }
+} // FIN (min-width : 1024px)
+////////////////// BREAKPOINT ////////////////
+@media only screen and (min-width: 1224px) {
+  header {
+    nav {
+      margin-left: 20rem;
+    }
+  }
+} // FIN (min-width : 1224px)
+////////////////// BREAKPOINT ////////////////
+@media only screen and (min-width: 1550px) {
+  header {
+    display: grid;
+    grid-template-columns: 20% 75% 5%;
+    .logo--header {
+      margin-left: 1.1rem;
+    }
+
+    nav {
+      margin-left: 20rem;
+    }
+  }
+
+  main {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    .box--titulo {
+      .cards-top-list {
+        flex-direction: row;
+        .card-top-radio {
+        }
+      }
+    }
+  }
+} // FIN (min-width : 1824px)
