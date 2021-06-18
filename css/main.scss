@@ -111,23 +111,24 @@ header {
     background-color: #fafafa;
     left: 4px;
     bottom: 4px;
-    content: "\263D";
-    color: #0008ff;
-    font-size: 1.3em;
-    height: 1.6rem;
+    content: "\1F31E";
+    color: #2f3041;
+    font-size: 1.2em;
+    height: 1.55rem;
     transition: 0.4s;
-    width: 1.65rem;
+    width: 1.6rem;
   }
 
   input:checked + .slider {
-    background-color: #0008ff; //COLOR theme dark
+    background-color: #2f3041;
+    color: #2f3041; //COLOR theme dark
   }
 
   input:checked + .slider:before {
     transform: translateX(26px);
-    content: "\263C";
-    color: rgb(194, 194, 32); //COLOR
-    font-size: 1.3em;
+    content: "\1F31C";
+    //COLOR
+    font-size: 1.2em;
   }
 
   .slider.round {
@@ -439,8 +440,6 @@ main {
     .box--titulo {
       .cards-top-list {
         flex-direction: row;
-        .card-top-radio {
-        }
       }
     }
   }
