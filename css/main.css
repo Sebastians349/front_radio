@@ -9,11 +9,10 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans serif;
-  overflow-x: hidden;
 }
 
 /* google ads banner sizes
-  Medium Rectangle (300×250) Large Rectangle (336×280) Leaderboard (728×90) Half Page (300×600) FIX SD width: overflow-x*/
+  Medium Rectangle (300×250) Large Rectangle (336×280) Leaderboard (728×90) Half Page (300×600) */
 .google-ads-banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,9 +263,7 @@ main .box--titulo .cards-top-list .card-top-radio span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-items: center;
 }
 
 #listado--radios .group-radio-list .card-radio-sm {
@@ -275,6 +272,7 @@ main .box--titulo .cards-top-list .card-top-radio span {
   max-height: 100%;
   -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+  border-top: 5px solid #ebeeec;
 }
 
 #listado--radios .group-radio-list .card-radio-sm span {
@@ -289,26 +287,45 @@ main .box--titulo .cards-top-list .card-top-radio span {
 #listado--radios .group-radio-list .card-radio-sm img {
   max-width: 100%;
   max-height: 100%;
+  margin-top: 0.5rem;
+}
+
+#listado--radios .group-radio-list .card-radio-sm i {
+  font-size: 4rem;
+  padding: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #box--comentarios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #box--comentarios .box--facebook {
-  width: 100%;
-  border: dashed 1px red;
+  border: dashed 1px black;
+  width: 95%;
+  font-size: 1em;
+  text-align: center;
 }
 
 #backtotop--icon {
   position: relative;
-  z-index: 1;
-  -webkit-transform: translate(50px, -110px);
-          transform: translate(50px, -110px);
-  background-color: #beb0b0;
-  border: none;
+  float: right;
+  right: 35px;
+  bottom: 15px;
+  background-color: rgba(73, 27, 158, 0.7);
+  -webkit-box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 30px -10px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   color: white;
   cursor: pointer;
@@ -316,12 +333,55 @@ main .box--titulo .cards-top-list .card-top-radio span {
   font-size: 5rem;
   line-height: 3rem;
   width: 3rem;
+  -webkit-animation: late 2s infinite;
+          animation: late 2s infinite;
+}
+
+@-webkit-keyframes late {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(73, 27, 158, 0.7);
+            box-shadow: 0 0 0 0 rgba(73, 27, 158, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+            box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+            box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+  }
+}
+
+@keyframes late {
+  0% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(73, 27, 158, 0.7);
+            box-shadow: 0 0 0 0 rgba(73, 27, 158, 0.7);
+  }
+  70% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+            box-shadow: 0 0 0 10px rgba(255, 121, 63, 0);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+            box-shadow: 0 0 0 0 rgba(255, 121, 63, 0);
+  }
 }
 
 #footer {
-  width: 100%;
+  width: 95%;
   padding: 0.5rem;
-  border: 0.5px solid #ebeeec;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,19 +392,21 @@ main .box--titulo .cards-top-list .card-top-radio span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   font-size: 0.8em;
 }
 
 #footer .logo-radio-sm {
   text-align: center;
+  font-weight: 600;
+  font-size: larger;
 }
 
 #footer .logo-radio-sm img {
-  width: 3rem;
+  width: 2.5rem;
 }
 
 #footer .logo-radio-sm .titulo--logo {
@@ -354,14 +416,38 @@ main .box--titulo .cards-top-list .card-top-radio span {
 
 #footer .group-disclaimer a {
   text-decoration: none;
-  color: #347892;
+  color: rgba(73, 27, 158, 0.7);
 }
 
-#footer .group-disclaimer img {
-  width: 5rem;
+#footer .group-disclaimer .cafecito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media only screen and (min-width: 321px) and (max-width: 499px) {
+#footer .group-disclaimer .cafecito img {
+  width: 3.5rem;
+}
+
+#footer .group--redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 1rem;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 321px) and (max-width: 398px) {
   main {
     width: 80%;
     text-align: center;
@@ -378,14 +464,29 @@ main .box--titulo .cards-top-list .card-top-radio span {
             flex-direction: row;
   }
   main .box--titulo .cards-top-list .card-top-radio {
-    width: 45%;
+    width: 50%;
   }
   .google-ads-banner {
     width: 300px;
   }
+  #listado--radios .titulo--listado {
+    margin-top: 2rem;
+  }
+  #listado--radios .group-radio-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 12rem;
+        grid-template-rows: 12rem;
+    justify-items: center;
+  }
+  #listado--radios .group-radio-list .card-radio-sm {
+    width: 90%;
+  }
 }
 
-@media only screen and (min-width: 499px) and (max-width: 767px) {
+@media only screen and (min-width: 399px) and (max-width: 767px) {
   main {
     width: 80%;
     text-align: center;
@@ -403,6 +504,41 @@ main .box--titulo .cards-top-list .card-top-radio span {
   }
   .google-ads-banner {
     width: 336px;
+  }
+  #listado--radios .titulo--listado {
+    margin-top: 2rem;
+  }
+  #listado--radios .group-radio-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 11rem;
+        grid-template-rows: 11rem;
+  }
+  #listado--radios .group-radio-list .card-radio-sm {
+    width: 60%;
+  }
+  #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #footer .group--redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 0.2rem;
   }
 }
 
@@ -448,6 +584,20 @@ main .box--titulo .cards-top-list .card-top-radio span {
   .google-ads-banner {
     width: 336px;
   }
+  #listado--radios .titulo--listado {
+    margin-top: 2rem;
+  }
+  #listado--radios .group-radio-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: 11rem;
+        grid-template-rows: 11rem;
+  }
+  #listado--radios .group-radio-list .card-radio-sm {
+    width: 65%;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -484,11 +634,40 @@ main .box--titulo .cards-top-list .card-top-radio span {
   main .box--titulo .cards-top-list .card-top-radio {
     width: 22%;
   }
+  #listado--radios .titulo--listado {
+    margin-top: 2rem;
+  }
+  #listado--radios .group-radio-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    -ms-grid-rows: 12rem;
+        grid-template-rows: 12rem;
+    justify-items: center;
+  }
+  #listado--radios .group-radio-list .card-radio-sm {
+    width: 65%;
+  }
 }
 
 @media only screen and (min-width: 1224px) {
   header nav {
     margin-left: 20rem;
+  }
+  #listado--radios .titulo--listado {
+    margin-top: 2rem;
+  }
+  #listado--radios .group-radio-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+    -ms-grid-rows: 12rem;
+        grid-template-rows: 12rem;
+  }
+  #listado--radios .group-radio-list .card-radio-sm {
+    width: 65%;
   }
 }
 
@@ -516,6 +695,32 @@ main .box--titulo .cards-top-list .card-top-radio span {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  #listado--radios .titulo--listado {
+    margin-top: 2rem;
+  }
+  #listado--radios .group-radio-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+    -ms-grid-rows: 12rem;
+        grid-template-rows: 12rem;
+  }
+  #listado--radios .group-radio-list .card-radio-sm {
+    width: 65%;
+  }
+  #footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 /*# sourceMappingURL=main.css.map */
