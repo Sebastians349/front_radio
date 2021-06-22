@@ -33,8 +33,8 @@ body {
 .modal {
   width: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50vh;
+  left: 50vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: white;
@@ -64,10 +64,12 @@ body {
 .modal .wrapper--player i {
   font-size: 5rem;
   margin-bottom: 1rem;
+  color: #0008ff;
 }
 
 .modal .wrapper--player .nombre--player {
   margin-top: 1rem;
+  color: #333;
   font-size: 1.5rem;
 }
 
@@ -555,6 +557,9 @@ main .box--titulo .cards-top-list .card-top-radio span {
 }
 
 @media only screen and (min-width: 399px) and (max-width: 767px) {
+  .modal {
+    width: 35%;
+  }
   main {
     width: 80%;
     text-align: center;
@@ -611,6 +616,9 @@ main .box--titulo .cards-top-list .card-top-radio span {
 }
 
 @media only screen and (min-width: 768px) {
+  .modal {
+    width: 25%;
+  }
   header {
     -ms-grid-columns: 30%, auto, 15%;
         grid-template-columns: 30%, auto, 15%;
@@ -720,6 +728,9 @@ main .box--titulo .cards-top-list .card-top-radio span {
 }
 
 @media only screen and (min-width: 1224px) {
+  .modal {
+    width: 20%;
+  }
   header nav {
     margin-left: 20rem;
   }

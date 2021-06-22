@@ -28,8 +28,8 @@ body {
 .modal {
   width: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50vh;
+  left: 50vw;
   transform: translate(-50%, -50%);
   background-color: white;
   padding: 6rem;
@@ -44,10 +44,11 @@ body {
     i {
       font-size: 5rem;
       margin-bottom: 1rem;
+      color: #0008ff;
     }
     .nombre--player {
       margin-top: 1rem;
-
+      color: #333;
       font-size: 1.5rem;
     }
   }
@@ -74,7 +75,7 @@ body {
   background: none;
 }
 
-//clases para el modal
+// FIN clases para el modal
 
 header {
   display: grid;
@@ -437,6 +438,10 @@ main {
 ////////////////// BREAKPOINT ////////////////
 
 @media only screen and (min-width: 399px) and (max-width: 767px) {
+  .modal {
+    width: 35%;
+  }
+
   main {
     width: 80%;
     text-align: center;
@@ -481,6 +486,9 @@ main {
 ////////////////// BREAKPOINT ////////////////
 
 @media only screen and (min-width: 768px) {
+  .modal {
+    width: 25%;
+  }
   header {
     grid-template-columns: 30%, auto, 15%;
     nav {
@@ -580,6 +588,9 @@ main {
 } // FIN (min-width : 1024px)
 ////////////////// BREAKPOINT ////////////////
 @media only screen and (min-width: 1224px) {
+  .modal {
+    width: 20%;
+  }
   header {
     nav {
       margin-left: 20rem;
