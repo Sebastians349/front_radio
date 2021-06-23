@@ -361,20 +361,24 @@ main {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   font-size: 0.8em;
+  gap: 1rem;
 
   .logo-radio-sm {
-    text-align: center;
-    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
     font-size: larger;
     img {
       width: 2.5rem;
     }
     .titulo--logo {
       font-size: 1em;
-      font-weight: 400;
+      font-weight: 600;
+      text-transform: uppercase;
     }
   }
   .group-disclaimer {
@@ -394,8 +398,16 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;
-    gap: 1rem;
+    gap: 3rem;
     font-size: 1.5em;
+    a {
+      color: #333;
+    }
+    a:hover {
+      color: rgba(73, 27, 158, 0.7);
+
+      //PENDIENTE FIX HOVER COLOR
+    }
   }
 } //fin footer
 
@@ -478,8 +490,9 @@ main {
     flex-flow: row wrap;
     .group--redes {
       display: flex;
-      flex-flow: column wrap;
-      gap: 0.2rem;
+      flex-flow: row wrap;
+      gap: 3.2rem;
+      margin: 1rem;
     }
   }
 } // FIN media only screen and (min-width: 399px) and (max-width: 767px)

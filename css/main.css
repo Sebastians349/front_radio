@@ -462,16 +462,25 @@ main .box--titulo .cards-top-list .card-top-radio span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   font-size: 0.8em;
+  gap: 1rem;
 }
 
 #footer .logo-radio-sm {
-  text-align: center;
-  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em;
   font-size: larger;
 }
 
@@ -481,7 +490,8 @@ main .box--titulo .cards-top-list .card-top-radio span {
 
 #footer .logo-radio-sm .titulo--logo {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 #footer .group-disclaimer a {
@@ -513,8 +523,16 @@ main .box--titulo .cards-top-list .card-top-radio span {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  gap: 1rem;
+  gap: 3rem;
   font-size: 1.5em;
+}
+
+#footer .group--redes a {
+  color: #333;
+}
+
+#footer .group--redes a:hover {
+  color: rgba(73, 27, 158, 0.7);
 }
 
 @media only screen and (min-width: 321px) and (max-width: 398px) {
@@ -607,11 +625,12 @@ main .box--titulo .cards-top-list .card-top-radio span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column wrap;
-            flex-flow: column wrap;
-    gap: 0.2rem;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    gap: 3.2rem;
+    margin: 1rem;
   }
 }
 
