@@ -1,4 +1,15 @@
 @charset "UTF-8";
+:root {
+  --rojo: #ff002c;
+  --azul: #cc00ff;
+  --amarillo: #f8ff00;
+  --naranja: #ffaf00;
+  --blanco: #fafafa;
+  --negro: #333;
+  --hover: rgba(73, 27, 158, 0.7);
+  --borde-sm: rgb(206, 192, 192);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -64,7 +75,7 @@ body {
 .modal .wrapper--player i {
   font-size: 5rem;
   margin-bottom: 1rem;
-  color: #0008ff;
+  color: var(--azul);
 }
 
 .modal .wrapper--player .nombre--player {
@@ -159,7 +170,7 @@ header nav ul li {
 
 header nav ul li a:hover {
   padding: 0.6rem;
-  background-color: #0008ff;
+  background-color: var(--hover);
   color: #fafafa;
   border-radius: 3px;
   -webkit-transition: 0.3s all ease-in-out;
@@ -274,19 +285,19 @@ main .box--titulo .cards-top-list {
 }
 
 main .box--titulo .cards-top-list #top-1 {
-  border-top: 5px solid red;
+  border-top: 5px solid var(--rojo);
 }
 
 main .box--titulo .cards-top-list #top-2 {
-  border-top: 5px solid blue;
+  border-top: 5px solid var(--azul);
 }
 
 main .box--titulo .cards-top-list #top-3 {
-  border-top: 5px solid yellow;
+  border-top: 5px solid var(--naranja);
 }
 
 main .box--titulo .cards-top-list #top-4 {
-  border-top: 5px solid orange;
+  border-top: 5px solid var(--amarillo);
 }
 
 main .box--titulo .cards-top-list .card-top-radio {
@@ -305,7 +316,7 @@ main .box--titulo .cards-top-list .card-top-radio img {
 
 main .box--titulo .cards-top-list .card-top-radio span {
   display: block;
-  border-top: 1px solid #cec0c0;
+  border-top: 1px solid var(--borde-sm);
   font-size: 1em;
   font-weight: 300;
   padding: 1rem;

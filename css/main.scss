@@ -1,3 +1,14 @@
+:root {
+  --rojo: #ff002c;
+  --azul: #cc00ff;
+  --amarillo: #f8ff00;
+  --naranja: #ffaf00;
+  --blanco: #fafafa;
+  --negro: #333;
+  --hover: rgba(73, 27, 158, 0.7);
+  --borde-sm: rgb(206, 192, 192);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -44,7 +55,7 @@ body {
     i {
       font-size: 5rem;
       margin-bottom: 1rem;
-      color: #0008ff;
+      color: var(--azul);
     }
     .nombre--player {
       margin-top: 1rem;
@@ -77,6 +88,7 @@ body {
 
 // FIN clases para el modal
 
+// header
 header {
   display: grid;
   grid-template-columns: 100%;
@@ -118,7 +130,7 @@ header {
         padding: 0.6rem;
         a:hover {
           padding: 0.6rem;
-          background-color: #0008ff; //COLORFIX
+          background-color: var(--hover); //COLORFIX
           color: #fafafa;
           border-radius: 3px;
           transition: 0.3s all ease-in-out;
@@ -217,16 +229,16 @@ main {
       flex-flow: column wrap;
       // COLORFIX BAJARLE 1 TONO
       #top-1 {
-        border-top: 5px solid red;
+        border-top: 5px solid var(--rojo);
       }
       #top-2 {
-        border-top: 5px solid blue;
+        border-top: 5px solid var(--azul);
       }
       #top-3 {
-        border-top: 5px solid yellow;
+        border-top: 5px solid var(--naranja);
       }
       #top-4 {
-        border-top: 5px solid orange;
+        border-top: 5px solid var(--amarillo);
       }
       .card-top-radio {
         width: 80%;
@@ -240,7 +252,7 @@ main {
         }
         span {
           display: block;
-          border-top: 1px solid rgb(206, 192, 192);
+          border-top: 1px solid var(--borde-sm);
           font-size: 1em;
           font-weight: 300;
           padding: 1rem;
