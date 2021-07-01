@@ -169,19 +169,29 @@
         <img src="images/logos/logoplayb.png" alt="" />
         <span class="line">Radio-Fm 102.4</span>
       </div>
+      <!-- cierra el grupo  -->
 
-      <!-- cierra el grupo -->
-      <!-- <div class="modal hidden">
-        <button class="close-modal">&times;</button>
-        <img src="images/logos/logoplayb.png" alt="">
-      </div>
-      <div class="overlay hidden"></div> -->
+      <!----------------------- MODAL ---------->
+      <!-- 
       <div class="modal hidden">
         <button class="close-modal">&times;</button>
         <div class="wrapper--player">
-          <i class="far fa-play-circle"></i>
+          <button class="play-button"
+            onClick="togglePlay('https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio')"><i
+              class="far fa-play-circle"></i></button>
+          <div class="nombre--player">Radio-Fm 102.4</div>
+        </div> -->
+
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <div class="wrapper--player">
+          <audio id="myAudio" src='https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio' preload="auto">
+          </audio>
+          <a onClick="togglePlay()"><i class="far fa-play-circle"></i></a>
           <div class="nombre--player">Radio-Fm 102.4</div>
         </div>
+
 
       </div>
       <div class="overlay hidden"></div>
@@ -237,6 +247,7 @@
   </footer>
   <script src="js/backtotop.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/player.js"></script>
 </body>
 
 </html>
