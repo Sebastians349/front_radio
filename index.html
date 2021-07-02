@@ -172,28 +172,36 @@
       <!-- cierra el grupo  -->
 
       <!----------------------- MODAL ---------->
-      <!-- 
+      <!--        modal original
+ 
       <div class="modal hidden">
         <button class="close-modal">&times;</button>
         <div class="wrapper--player">
-          <button class="play-button"
-            onClick="togglePlay('https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio')"><i
-              class="far fa-play-circle"></i></button>
+          <i class="far fa-play-circle"></i>
           <div class="nombre--player">Radio-Fm 102.4</div>
-        </div> -->
+        </div>-->
 
+      <!--  PRUEBASSSSSSSSSS -->
 
       <div class="modal hidden">
         <button class="close-modal">&times;</button>
         <div class="wrapper--player">
-          <audio id="myAudio" src='https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio' preload="auto">
-          </audio>
-          <a onClick="togglePlay()"><i class="far fa-play-circle"></i></a>
-          <div class="nombre--player">Radio-Fm 102.4</div>
+          <img src="image.png" onclick="playAudio('')">
         </div>
-
-
       </div>
+
+
+      <!--      FIX LLAMAR A VARIABLE RADIOS 
+      <div class=" modal hidden">
+          <button class="close-modal">&times;</button>
+          <div class="wrapper--player">
+            <audio id="play-button" src='https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio'
+              preload="auto">
+            </audio>
+            <a onClick="togglePlay()"><i class="far fa-play-circle"></i></a>
+            <div class="nombre--player"></div>
+          </div>
+        </div> -->
       <div class="overlay hidden"></div>
   </section>
   <!-- COMENTARIOS -->
